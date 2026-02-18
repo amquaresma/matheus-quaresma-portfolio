@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matheus Quaresma — Full Stack Developer</title>
+
+  <!-- Fonts: Orbitron (tech display) · DM Sans (body) · JetBrains Mono (code/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══ BACKGROUND ══════════════════════════════ -->
+<div class="bg-layer">
+  <div class="o o1"></div><div class="o o2"></div>
+  <div class="o o3"></div><div class="o o4"></div><div class="o o5"></div>
+</div>
+<div class="bg-grid"></div>
+<div class="bg-noise"></div>
+
+<!-- ══ SPLASH ══════════════════════════════════ -->
+<div id="splash">
+  <div class="s-name">Matheus <b>Quaresma</b></div>
+  <div class="s-sub">Full Stack Developer</div>
+  <div class="s-track"><div class="s-fill"></div></div>
+</div>
+
+<div id="site">
+
+  <!-- ══ NAV ══════════════════════════════════ -->
+  <nav id="nav">
+    <a class="n-logo" href="#hero">MQ<b>.</b>dev</a>
+    <ul class="n-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#awards">Prêmios</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button class="n-ham" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="m-menu" id="mmenu">
+    <a href="#skills"   onclick="cm()">Skills</a>
+    <a href="#projects" onclick="cm()">Projetos</a>
+    <a href="#awards"   onclick="cm()">Prêmios</a>
+    <a href="#about"    onclick="cm()">Sobre</a>
+    <a href="#contact"  onclick="cm()">Contato</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div>
+
+      <div class="h-pill r" style="transition-delay:.05s">
+        <span class="dot"></span> disponível para oportunidades
+      </div>
+
+      <div class="h-name r" style="transition-delay:.18s">
+        <span class="line1">Matheus</span>
+        <span class="line2">Rodrigues</span>
+        <span class="line3">Quaresma</span>
+      </div>
+
+      <div class="h-tags r" style="transition-delay:.3s">
+        <span class="tag ti">Full Stack Dev</span>
+        <span class="tag tt">Eng. Computação</span>
+        <span class="tag tm">São Paulo · SP</span>
+      </div>
+
+      <p class="h-brief r" style="transition-delay:.4s">
+        Desenvolvedor focado no ciclo completo de software —
+        do <strong>design à API</strong>.
+        Apaixonado pela interseção entre <strong>web, mobile e IA</strong>.
+        Código limpo, boas práticas e soluções que realmente funcionam.
+      </p>
+
+      <div class="h-socials r" style="transition-delay:.52s">
+        <a class="social-btn" href="https://github.com/amquaresma" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="social-btn" href="https://linkedin.com/in/matheus-quaresma" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social-btn" href="mailto:mathquaresma@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          <span>E-mail</span>
+        </a>
+        <a class="social-btn" href="https://instagram.com/mquaresmaa_" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="social-btn" href="https://wa.me/5511992917596" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.533 5.851L.057 23.428l5.701-1.496A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.63-.519-5.127-1.416l-.361-.214-3.743.981.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Photo card -->
+    <div class="h-photo-col rx" style="transition-delay:.45s">
+      <input type="file" id="photo-input" accept="image/*">
+      <div class="photo-wrap" onclick="document.getElementById('photo-input').click()" title="Clique para adicionar foto">
+        <div class="photo-glow"></div>
+        <div class="photo-bg"></div>
+        <div class="photo-ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/></svg>
+          <p>Clique para<br>adicionar foto</p>
+        </div>
+        <img id="photo-preview" alt="Matheus Quaresma">
+      </div>
+      <div class="h-info">
+        <div class="hi-chip"><small>Graduação</small>Eng. Computação — SENAC</div>
+        <div class="hi-chip"><small>Técnico</small>Desenv. de Sistemas — ETEC</div>
+        <div class="hi-chip ac"><small>Inglês</small>C1 Avançado (EF SET)</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint r" style="transition-delay:.9s">
+      <div class="mouse"><div class="mouse-dot"></div></div>
+      scroll
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══════════════════════════════════════════
+       SKILLS — ARSENAL
+       Sidebar category nav · Detail panel with chips only
+  ══════════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="si">
+
+      <div class="eyebrow fade">Habilidades Técnicas</div>
+      <h2 class="sec-title fade">Meu Arsenal</h2>
+      <p class="sec-desc fade">Selecione uma categoria para explorar as tecnologias que domino no ciclo completo de desenvolvimento.</p>
+
+      <div class="arsenal-wrap fade">
+
+        <!-- ── SIDEBAR ── -->
+        <nav class="arsenal-sidebar" aria-label="Categorias">
+
+          <button class="cat-btn" data-cat="langs" style="--c:#c4b5fd">
+            <span class="cat-ico">{ }</span>
+            <span class="cat-info">
+              <span class="cat-lbl">Core</span>
+              <span class="cat-name">Linguagens</span>
+              <span class="cat-count">7 tecnologias</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="frontend" style="--c:#00cfb0">
+            <span class="cat-ico">🌐</span>
+            <span class="cat-info">
+              <span class="cat-lbl">UI / Interfaces</span>
+              <span class="cat-name">Front-End</span>
+              <span class="cat-count">4 tecnologias</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="mobile" style="--c:#00cfb0">
+            <span class="cat-ico">📱</span>
+            <span class="cat-info">
+              <span class="cat-lbl">Nativo</span>
+              <span class="cat-name">Mobile</span>
+              <span class="cat-count">3 tecnologias</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="backend" style="--c:#5b73f8">
+            <span class="cat-ico">⚙️</span>
+            <span class="cat-info">
+              <span class="cat-lbl">API / Servidor</span>
+              <span class="cat-name">Back-End</span>
+              <span class="cat-count">4 tecnologias</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="dados" style="--c:#fbbf24">
+            <span class="cat-ico">🗄️</span>
+            <span class="cat-info">
+              <span class="cat-lbl">Storage</span>
+              <span class="cat-name">Dados & BD</span>
+              <span class="cat-count">4 tecnologias</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="design" style="--c:#f9a8d4">
+            <span class="cat-ico">🎨</span>
+            <span class="cat-info">
+              <span class="cat-lbl">UX / UI</span>
+              <span class="cat-name">Design</span>
+              <span class="cat-count">5 ferramentas</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="embed" style="--c:#6ee7b7">
+            <span class="cat-ico">🔌</span>
+            <span class="cat-info">
+              <span class="cat-lbl">IoT / Hardware</span>
+              <span class="cat-name">Embarcados</span>
+              <span class="cat-count">5 tecnologias</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="arch" style="--c:#93c5fd">
+            <span class="cat-ico">🏗️</span>
+            <span class="cat-info">
+              <span class="cat-lbl">Modelagem</span>
+              <span class="cat-name">Arquitetura</span>
+              <span class="cat-count">8 ferramentas</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+          <button class="cat-btn" data-cat="tools" style="--c:#8a8ba6">
+            <span class="cat-ico">🛠️</span>
+            <span class="cat-info">
+              <span class="cat-lbl">DevOps</span>
+              <span class="cat-name">Ferramentas</span>
+              <span class="cat-count">6 ferramentas</span>
+            </span>
+            <span class="cat-arrow">›</span>
+          </button>
+
+        </nav><!-- /sidebar -->
+
+        <!-- ── DETAIL PANELS ── -->
+        <div class="arsenal-detail">
+
+          <!-- Linguagens -->
+          <div class="sk-panel" id="sk-langs">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">{ }</span>
+                <div>
+                  <div class="skp-title">Linguagens de Programação</div>
+                  <div class="skp-sub">Core stack · lógica · scripting · marcação</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>JavaScript</span>
+                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>TypeScript</span>
+                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>Python</span>
+                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>C#</span>
+                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>PHP</span>
+                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>HTML5</span>
+                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Front-End -->
+          <div class="sk-panel" id="sk-frontend">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">🌐</span>
+                <div>
+                  <div class="skp-title">Front-End & Interfaces</div>
+                  <div class="skp-sub">Frameworks · estilização · componentes · responsividade</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React.js</span>
+                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Bootstrap</span>
+                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Tailwind CSS</span>
+                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <div class="sk-panel" id="sk-mobile">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">📱</span>
+                <div>
+                  <div class="skp-title">Desenvolvimento Mobile</div>
+                  <div class="skp-sub">Apps nativos · cross-platform · publicação</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React Native</span>
+                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Expo</span>
+                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React Native CLI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back-End -->
+          <div class="sk-panel" id="sk-backend">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">⚙️</span>
+                <div>
+                  <div class="skp-title">Back-End & APIs</div>
+                  <div class="skp-sub">Servidor · REST · arquitetura MVC · integração</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>REST API</span>
+                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>Arquitetura MVC</span>
+                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>Node.js</span>
+                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>Integrações de sistemas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dados & BD -->
+          <div class="sk-panel" id="sk-dados">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">🗄️</span>
+                <div>
+                  <div class="skp-title">Dados & Banco de Dados</div>
+                  <div class="skp-sub">SQL · NoSQL · modelagem · cloud storage</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>MySQL</span>
+                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>Firebase</span>
+                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>SQL</span>
+                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>Modelagem de dados</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design -->
+          <div class="sk-panel" id="sk-design">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">🎨</span>
+                <div>
+                  <div class="skp-title">Design & UX / UI</div>
+                  <div class="skp-sub">Produto visual · wireframes · prototipagem · identidade</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Figma</span>
+                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>UX / UI Design</span>
+                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Wireframe</span>
+                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Canva Pro</span>
+                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Prototipagem</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embarcados -->
+          <div class="sk-panel" id="sk-embed">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">🔌</span>
+                <div>
+                  <div class="skp-title">Sistemas Embarcados & IoT</div>
+                  <div class="skp-sub">Hardware · microcontroladores · automação · sensores</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>Arduino</span>
+                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>C / C++</span>
+                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>Circuitos elétricos</span>
+                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>IoT</span>
+                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>Sensores</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arquitetura -->
+          <div class="sk-panel" id="sk-arch">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">🏗️</span>
+                <div>
+                  <div class="skp-title">Arquitetura & Análise de Sistemas</div>
+                  <div class="skp-sub">Modelagem · documentação técnica · requisitos</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>UML</span>
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>BRModelo</span>
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Lucidchart</span>
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Análise de Requisitos</span>
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Arquitetura de Software</span>
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>DER</span>
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Fluxogramas</span>
+                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Casos de Uso</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ferramentas -->
+          <div class="sk-panel" id="sk-tools">
+            <div class="sk-panel-card">
+              <div class="skp-head">
+                <span class="skp-ico">🛠️</span>
+                <div>
+                  <div class="skp-title">Ferramentas & Versionamento</div>
+                  <div class="skp-sub">DevOps · controle de versão · produtividade · documentação</div>
+                </div>
+              </div>
+              <div class="skp-chips">
+                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Git</span>
+                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>GitHub</span>
+                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Linux</span>
+                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Pacote Office</span>
+                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Controle de versão</span>
+                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Documentação técnica</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /arsenal-detail -->
+      </div><!-- /arsenal-wrap -->
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="si">
+      <div class="eyebrow fade">Portfólio</div>
+      <h2 class="sec-title fade">Projetos</h2>
+      <p class="sec-desc fade">Do conceito ao deploy. Cada projeto é uma solução real para um problema real.</p>
+
+      <div class="proj-tabs">
+        <button class="ptab act" data-tab="apps">Apps Mobile</button>
+        <button class="ptab" data-tab="sites">Sites</button>
+        <button class="ptab" data-tab="sistemas">Sistemas Desktop</button>
+        <button class="ptab" data-tab="embarcados">Embarcados</button>
+        <button class="ptab" data-tab="arquitetura">Arquitetura</button>
+        <button class="ptab" data-tab="prototipos">Protótipos</button>
+      </div>
+
+      <!-- Apps Mobile -->
+      <div class="proj-panel act" id="tab-apps">
+
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">React Native</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="BlueWay"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row">
+              <div class="proj-name">BlueWay</div>
+              <span class="pst st-done">Concluído</span>
+            </div>
+            <p class="proj-desc">Aplicativo mobile para acompanhamento escolar de alunos com TDAH e TEA. Funcionalidades pedagógicas, relatórios e integração entre alunos, responsáveis e instituições.</p>
+            <div class="proj-stack">
+              <span class="stk fe">React Native</span>
+              <span class="stk fe">Expo</span>
+              <span class="stk lg">TypeScript</span>
+              <span class="stk db">Firebase</span>
+              <span class="stk">UX/UI</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Repositório
+              </a>
+              <a class="plink" href="#">Figma</a>
+              <a class="plink" href="#">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">React Native</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Maternus"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row">
+              <div class="proj-name">Maternus</div>
+              <span class="pst st-done">Concluído</span>
+            </div>
+            <p class="proj-desc">App mobile para gestantes com foco em saúde mental. Agenda de atendimentos, diário emocional, comunidade e campanhas institucionais.</p>
+            <div class="proj-stack">
+              <span class="stk fe">React Native</span>
+              <span class="stk fe">Expo</span>
+              <span class="stk lg">TypeScript</span>
+              <span class="stk db">Firebase</span>
+              <span class="stk">Saúde Digital</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma" target="_blank" rel="noopener">Repositório</a>
+              <a class="plink" href="#">Figma</a>
+              <a class="plink" href="#">Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tab-apps -->
+
+      <!-- Sites -->
+      <div class="proj-panel" id="tab-sites">
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">Web</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Site"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Projeto Web</div><span class="pst st-wip">Em breve</span></div>
+            <p class="proj-desc">Espaço para seus projetos de sites. Adicione nome, descrição, stack e links.</p>
+            <div class="proj-stack"><span class="stk fe">React.js</span><span class="stk be">Node.js</span><span class="stk lg">TypeScript</span><span class="stk db">MySQL</span></div>
+            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Demo ao vivo</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sistemas Desktop -->
+      <div class="proj-panel" id="tab-sistemas">
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">Desktop · C#</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Trampay"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Trampay</div><span class="pst st-done">TCC</span></div>
+            <p class="proj-desc">Sistema de controle de caixa e agenda para microempresas e autônomos. Organização financeira completa, desenvolvido como TCC técnico.</p>
+            <div class="proj-stack"><span class="stk lg">C#</span><span class="stk be">MVC</span><span class="stk db">MySQL</span><span class="stk be">REST API</span></div>
+            <div class="proj-links"><a class="plink" href="https://github.com/amquaresma" target="_blank" rel="noopener">Repositório</a><a class="plink" href="#">Figma</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Embarcados -->
+      <div class="proj-panel" id="tab-embarcados">
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">Arduino · IoT</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar foto / esquemático</span></div>
+            <img alt="Embarcado"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Circuito IoT</div><span class="pst st-wip">Em breve</span></div>
+            <p class="proj-desc">Projetos de sistemas embarcados — circuitos, microcontroladores, automação e IoT. Adicione nome, esquemático e documentação técnica.</p>
+            <div class="proj-stack"><span class="stk em">Arduino</span><span class="stk em">C/C++</span><span class="stk">Sensores</span><span class="stk">IoT</span></div>
+            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Esquemático</a><a class="plink" href="#">Documentação</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arquitetura -->
+      <div class="proj-panel" id="tab-arquitetura">
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">UML · Modelagem</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar diagrama</span></div>
+            <img alt="UML"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Diagramas UML</div><span class="pst st-proto">Modelagem</span></div>
+            <p class="proj-desc">Diagramas de arquitetura, classes, sequência e casos de uso com Lucidchart e Astah. Documentação técnica completa de sistemas.</p>
+            <div class="proj-stack"><span class="stk ar">UML</span><span class="stk ar">Lucidchart</span><span class="stk ar">BRModelo</span><span class="stk">DER</span></div>
+            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Lucidchart</a><a class="plink" href="#">Documentação</a></div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">Análise · Requisitos</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar diagrama</span></div>
+            <img alt="Requisitos"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Requisitos</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Levantamento de requisitos funcionais e não-funcionais, fluxogramas de processos e modelagem com BRModelo.</p>
+            <div class="proj-stack"><span class="stk ar">Requisitos</span><span class="stk ar">Fluxogramas</span><span class="stk ar">BRModelo</span></div>
+            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Ver PDF</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Protótipos -->
+      <div class="proj-panel" id="tab-prototipos">
+        <div class="proj-card">
+          <div class="proj-img" onclick="imgUp(this)">
+            <div class="pibadge">Figma · UI</div>
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Protótipo"><input type="file" class="proj-img-input" accept="image/*">
+          </div>
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Protótipo UI</div><span class="pst st-proto">Figma</span></div>
+            <p class="proj-desc">Protótipos e wireframes de alta fidelidade. Mockups, fluxos de UX e designs conceituais desenvolvidos no Figma.</p>
+            <div class="proj-stack"><span class="stk">Figma</span><span class="stk">UX/UI</span><span class="stk">Wireframe</span><span class="stk">Prototipagem</span></div>
+            <div class="proj-links"><a class="plink" href="#">Abrir no Figma</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══════════════════════════════════════════
+       AWARDS
+  ══════════════════════════════════════════════ -->
+  <section id="awards">
+    <div class="si">
+      <div class="eyebrow fade">Reconhecimentos</div>
+      <h2 class="sec-title fade">Prêmios & Méritos</h2>
+      <p class="sec-desc fade">Resultados de olimpíadas e competições nacionais em 2025.</p>
+      <div class="awards-grid">
+        <div class="award-card fade"><div class="award-level lv-gold">OURO</div><div><div class="award-title">Medalha de Ouro</div><div class="award-sub">Olimpíada Nacional de Ciências (ONC)</div><span class="award-year">2025 — Nacional</span></div></div>
+        <div class="award-card fade"><div class="award-level lv-gold">OURO</div><div><div class="award-title">Medalha de Ouro</div><div class="award-sub">Olimpíada Brasileira de Geopolítica (OBGP)</div><span class="award-year">2025.1 — Nacional</span></div></div>
+        <div class="award-card fade"><div class="award-level lv-silver">PRATA</div><div><div class="award-title">Medalha de Prata</div><div class="award-sub">Olimpíada Brasileira de Geografia (OBG)</div><span class="award-year">2025 — Nacional</span></div></div>
+        <div class="award-card fade"><div class="award-level lv-bronze">BRONZE</div><div><div class="award-title">Medalha de Bronze</div><div class="award-sub">Torneio Nacional Brasileiro de Ciências (TNB)</div><span class="award-year">2025 — Nacional</span></div></div>
+        <div class="award-card fade"><div class="award-level lv-honor">MH</div><div><div class="award-title">Menção Honrosa</div><div class="award-sub">Olimpíada Brasileira de Tecnologia (OBT)</div><span class="award-year">2025 — Nacional</span></div></div>
+        <div class="award-card fade"><div class="award-level lv-honor">MH</div><div><div class="award-title">Menção Honrosa</div><div class="award-sub">Maratona Tech 2025</div><span class="award-year">2025</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="si">
+      <div class="eyebrow fade">Sobre Mim</div>
+      <h2 class="sec-title fade">Quem sou eu</h2>
+      <div class="about-grid">
+
+        <!-- Left: bio + langs -->
+        <div class="fade">
+          <p class="about-text">Sou o <strong>Matheus Quaresma</strong>, desenvolvedor Full Stack da Zona Sul de São Paulo. Minha trajetória começou com curiosidade genuína sobre como as coisas funcionam — e evoluiu para uma carreira dedicada a construir software que resolve problemas reais com elegância.</p>
+          <p class="about-text">Atualmente curso <strong>Engenharia de Computação no SENAC</strong> e <strong>Ciência de Dados na FATEC</strong>. Acredito que a melhor solução está na interseção entre <strong>bom código, bom design e boa estratégia</strong>.</p>
+          <p class="about-text">Fora do teclado, sou medalhista nacional em olimpíadas de Ciências e Geopolítica — o que diz muito sobre como encaro desafios: com método, estudo e foco em resultados.</p>
+          <div class="lang-pills">
+            <span class="lang-pill pt"><span class="lang-flag">🇧🇷</span> Português <span class="lang-level-badge">Nativo</span></span>
+            <span class="lang-pill en"><span class="lang-flag">🇺🇸</span> Inglês <span class="lang-level-badge">C1 Avançado</span></span>
+            <span class="lang-pill es"><span class="lang-flag">🇪🇸</span> Espanhol <span class="lang-level-badge">Básico</span></span>
+          </div>
+        </div>
+
+        <!-- Right: accordion -->
+        <div class="accordion fade">
+
+          <!-- Graduações -->
+          <div class="acc-group open" data-acc>
+            <button class="acc-header">
+              <div class="acc-left">
+                <span class="acc-icon">🎓</span>
+                <div>
+                  <div class="acc-cat">Ensino Superior</div>
+                  <div class="acc-title">Graduações</div>
+                </div>
+              </div>
+              <span class="acc-count">2</span>
+              <div class="acc-chevron"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg></div>
+            </button>
+            <div class="acc-body">
+              <div class="acc-inner">
+                <div class="acc-item">
+                  <div class="acc-item-title">Bacharelado em Engenharia de Computação</div>
+                  <div class="acc-item-sub">Centro Universitário SENAC Santo Amaro</div>
+                  <div class="acc-item-period">2026 — 2030 (previsão)</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Tecnólogo em Ciência de Dados</div>
+                  <div class="acc-item-sub">FATEC Santana do Parnaíba</div>
+                  <div class="acc-item-period">2026 — 2028 (previsão)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Técnico -->
+          <div class="acc-group" data-acc>
+            <button class="acc-header">
+              <div class="acc-left">
+                <span class="acc-icon">🏫</span>
+                <div>
+                  <div class="acc-cat">Ensino Técnico</div>
+                  <div class="acc-title">Formação Técnica</div>
+                </div>
+              </div>
+              <span class="acc-count">1</span>
+              <div class="acc-chevron"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg></div>
+            </button>
+            <div class="acc-body">
+              <div class="acc-inner">
+                <div class="acc-item">
+                  <div class="acc-item-title">Técnico em Desenvolvimento de Sistemas</div>
+                  <div class="acc-item-sub">ETEC Taboão da Serra</div>
+                  <div class="acc-item-period">Concluído — 2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cursos -->
+          <div class="acc-group" data-acc>
+            <button class="acc-header">
+              <div class="acc-left">
+                <span class="acc-icon">📚</span>
+                <div>
+                  <div class="acc-cat">Certificações & Cursos</div>
+                  <div class="acc-title">Extracurricular</div>
+                </div>
+              </div>
+              <span class="acc-count">2</span>
+              <div class="acc-chevron"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg></div>
+            </button>
+            <div class="acc-body">
+              <div class="acc-inner">
+                <div class="acc-item">
+                  <div class="acc-item-title">Inglês C1 Avançado — EF SET / CEFR</div>
+                  <div class="acc-item-sub">IW – Inglês sem Enrolação · Itapecerica da Serra</div>
+                  <div class="acc-item-period">2024 — 2025 · 2 anos</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">16ª Escola de Inovadores</div>
+                  <div class="acc-item-sub">INOVA Centro Paula Souza — 40h</div>
+                  <div class="acc-item-period">2023 · Empreendedorismo & Inovação</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /accordion -->
+      </div><!-- /about-grid -->
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="fade">
+        <div class="eyebrow">Contato</div>
+        <h2 class="sec-title">Vamos conversar?</h2>
+        <p class="sec-desc" style="margin-bottom:0">
+          Disponível para estágio, projetos freelance e colaborações.
+          Escolha o canal que preferir.
+        </p>
+      </div>
+      <div class="contact-right fade">
+        <a class="contact-card" href="mailto:mathquaresma@gmail.com">
+          <div class="cc-icon cc-i-em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></div>
+          <div><div class="cc-label">E-mail</div><div class="cc-value">mathquaresma@gmail.com</div></div>
+          <span class="cc-arrow">→</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/matheus-quaresma" target="_blank" rel="noopener">
+          <div class="cc-icon cc-i-li"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+          <div><div class="cc-label">LinkedIn</div><div class="cc-value">matheus-quaresma</div></div>
+          <span class="cc-arrow">→</span>
+        </a>
+        <a class="contact-card" href="https://wa.me/5511992917596" target="_blank" rel="noopener">
+          <div class="cc-icon cc-i-wh"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.533 5.851L.057 23.428l5.701-1.496A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.63-.519-5.127-1.416l-.361-.214-3.743.981.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg></div>
+          <div><div class="cc-label">WhatsApp</div><div class="cc-value">(11) 99291-7596</div></div>
+          <span class="cc-arrow">→</span>
+        </a>
+        <a class="contact-card" href="https://github.com/amquaresma" target="_blank" rel="noopener">
+          <div class="cc-icon cc-i-gh"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></div>
+          <div><div class="cc-label">GitHub</div><div class="cc-value">amquaresma</div></div>
+          <span class="cc-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Matheus <b>Quaresma</b></div>
+        <p class="footer-tag">Desenvolvedor Full Stack · Construindo com tecnologia · São Paulo, SP.</p>
+        <ul class="footer-nav">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#awards">Prêmios</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a class="f-soc" href="https://github.com/amquaresma" target="_blank" rel="noopener" aria-label="GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a class="f-soc" href="https://linkedin.com/in/matheus-quaresma" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a class="f-soc" href="mailto:mathquaresma@gmail.com" aria-label="E-mail"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></a>
+          <a class="f-soc" href="https://instagram.com/mquaresmaa_" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+        </div>
+        <div class="footer-copy">© 2025 Matheus Rodrigues Quaresma<br>Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /site -->
+
+<script src="script.js"></script>
+</body>
+</html>
