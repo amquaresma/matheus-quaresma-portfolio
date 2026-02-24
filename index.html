@@ -41,9 +41,15 @@
       <li><a href="#about">Sobre</a></li>
       <li><a href="#contact">Contato</a></li>
     </ul>
-    <button class="n-ham" id="ham" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="n-actions">
+      <a class="cv-btn" href="cv-matheus-quaresma.pdf" download aria-label="Baixar CV">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>CV</span>
+      </a>
+      <button class="n-ham" id="ham" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
   <div class="m-menu" id="mmenu">
@@ -58,6 +64,25 @@
        HERO
   ══════════════════════════════════════════════ -->
   <section id="hero">
+
+    <!-- particles scattered in the gap between text and photo columns -->
+    <div class="hero-particles" aria-hidden="true">
+      <span style="--dur:14s;--delay:0s;  --dx:10px;  left:52%; top:75%;"></span>
+      <span style="--dur:11s;--delay:2s;  --dx:-8px;  left:57%; top:55%;"></span>
+      <span style="--dur:16s;--delay:1s;  --dx:6px;   left:55%; top:35%;"></span>
+      <span style="--dur:13s;--delay:4s;  --dx:12px;  left:60%; top:20%;"></span>
+      <span style="--dur:18s;--delay:0.5s;--dx:-10px; left:63%; top:65%;"></span>
+      <span style="--dur:10s;--delay:3s;  --dx:8px;   left:50%; top:45%;"></span>
+      <span style="--dur:15s;--delay:6s;  --dx:-6px;  left:65%; top:82%;"></span>
+      <span style="--dur:12s;--delay:2.5s;--dx:14px;  left:54%; top:10%;"></span>
+      <span style="--dur:20s;--delay:1.5s;--dx:-12px; left:61%; top:90%;"></span>
+      <span style="--dur:9s; --delay:5s;  --dx:4px;   left:58%; top:28%;"></span>
+      <span style="--dur:17s;--delay:3.5s;--dx:16px;  left:53%; top:60%;"></span>
+      <span style="--dur:11s;--delay:7s;  --dx:-8px;  left:62%; top:42%;"></span>
+    </div>
+    <!-- scanline sweeping through the gap -->
+    <div class="hero-scanline" aria-hidden="true"></div>
+
     <div>
 
       <div class="h-pill r" style="transition-delay:.05s">
@@ -100,10 +125,6 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
           <span>Instagram</span>
         </a>
-        <a class="social-btn" href="https://wa.me/5511992917596" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.533 5.851L.057 23.428l5.701-1.496A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.63-.519-5.127-1.416l-.361-.214-3.743.981.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
-          <span>WhatsApp</span>
-        </a>
       </div>
 
     </div>
@@ -137,7 +158,7 @@
 
   <!-- ══════════════════════════════════════════
        SKILLS — ARSENAL
-       Sidebar category nav · Detail panel with chips only
+       Sidebar list · Detail: list items + chip cloud
   ══════════════════════════════════════════════ -->
   <section id="skills">
     <div class="si">
@@ -152,7 +173,9 @@
         <nav class="arsenal-sidebar" aria-label="Categorias">
 
           <button class="cat-btn" data-cat="langs" style="--c:#c4b5fd">
-            <span class="cat-ico">{ }</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">Core</span>
               <span class="cat-name">Linguagens</span>
@@ -162,7 +185,9 @@
           </button>
 
           <button class="cat-btn" data-cat="frontend" style="--c:#00cfb0">
-            <span class="cat-ico">🌐</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">UI / Interfaces</span>
               <span class="cat-name">Front-End</span>
@@ -172,7 +197,9 @@
           </button>
 
           <button class="cat-btn" data-cat="mobile" style="--c:#00cfb0">
-            <span class="cat-ico">📱</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">Nativo</span>
               <span class="cat-name">Mobile</span>
@@ -182,7 +209,9 @@
           </button>
 
           <button class="cat-btn" data-cat="backend" style="--c:#5b73f8">
-            <span class="cat-ico">⚙️</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">API / Servidor</span>
               <span class="cat-name">Back-End</span>
@@ -192,7 +221,9 @@
           </button>
 
           <button class="cat-btn" data-cat="dados" style="--c:#fbbf24">
-            <span class="cat-ico">🗄️</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">Storage</span>
               <span class="cat-name">Dados & BD</span>
@@ -202,7 +233,9 @@
           </button>
 
           <button class="cat-btn" data-cat="design" style="--c:#f9a8d4">
-            <span class="cat-ico">🎨</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">UX / UI</span>
               <span class="cat-name">Design</span>
@@ -212,7 +245,9 @@
           </button>
 
           <button class="cat-btn" data-cat="embed" style="--c:#6ee7b7">
-            <span class="cat-ico">🔌</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M9 21H5a2 2 0 0 1-2-2v-4"/><path d="M15 3h4a2 2 0 0 1 2 2v4"/><path d="M15 21h4a2 2 0 0 0 2-2v-4"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">IoT / Hardware</span>
               <span class="cat-name">Embarcados</span>
@@ -222,7 +257,9 @@
           </button>
 
           <button class="cat-btn" data-cat="arch" style="--c:#93c5fd">
-            <span class="cat-ico">🏗️</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">Modelagem</span>
               <span class="cat-name">Arquitetura</span>
@@ -232,7 +269,9 @@
           </button>
 
           <button class="cat-btn" data-cat="tools" style="--c:#8a8ba6">
-            <span class="cat-ico">🛠️</span>
+            <span class="cat-ico">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </span>
             <span class="cat-info">
               <span class="cat-lbl">DevOps</span>
               <span class="cat-name">Ferramentas</span>
@@ -246,183 +285,252 @@
         <!-- ── DETAIL PANELS ── -->
         <div class="arsenal-detail">
 
-          <!-- Linguagens -->
+          <!-- ─ Linguagens ─ -->
           <div class="sk-panel" id="sk-langs">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#c4b5fd">
               <div class="skp-head">
-                <span class="skp-ico">{ }</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
                 <div>
                   <div class="skp-title">Linguagens de Programação</div>
                   <div class="skp-sub">Core stack · lógica · scripting · marcação</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>JavaScript</span>
-                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>TypeScript</span>
-                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>Python</span>
-                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>C#</span>
-                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>PHP</span>
-                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>HTML5</span>
-                <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>CSS3</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">JavaScript</span><span class="skp-item-tag">Scripting</span></div>
+                <div class="skp-item"><span class="skp-item-name">TypeScript</span><span class="skp-item-tag">Tipagem</span></div>
+                <div class="skp-item"><span class="skp-item-name">Python</span><span class="skp-item-tag">Data / Scripts</span></div>
+                <div class="skp-item"><span class="skp-item-name">C#</span><span class="skp-item-tag">Desktop / API</span></div>
+                <div class="skp-item"><span class="skp-item-name">PHP</span><span class="skp-item-tag">Web Back-End</span></div>
+                <div class="skp-item"><span class="skp-item-name">HTML5</span><span class="skp-item-tag">Marcação</span></div>
+                <div class="skp-item"><span class="skp-item-name">CSS3</span><span class="skp-item-tag">Estilização</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>JS + TS</span>
+                  <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>Python</span>
+                  <span class="sk-chip" style="--c:#c4b5fd"><span class="cd"></span>C#</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Front-End -->
+          <!-- ─ Front-End ─ -->
           <div class="sk-panel" id="sk-frontend">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#00cfb0">
               <div class="skp-head">
-                <span class="skp-ico">🌐</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
                 <div>
                   <div class="skp-title">Front-End & Interfaces</div>
                   <div class="skp-sub">Frameworks · estilização · componentes · responsividade</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React.js</span>
-                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Bootstrap</span>
-                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Tailwind CSS</span>
-                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Responsive Design</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">React.js</span><span class="skp-item-tag">Framework</span></div>
+                <div class="skp-item"><span class="skp-item-name">Tailwind CSS</span><span class="skp-item-tag">Estilização</span></div>
+                <div class="skp-item"><span class="skp-item-name">Bootstrap</span><span class="skp-item-tag">UI Kit</span></div>
+                <div class="skp-item"><span class="skp-item-name">Responsive Design</span><span class="skp-item-tag">Layout</span></div>
               </div>
-            </div>
-          </div>
-
-          <!-- Mobile -->
-          <div class="sk-panel" id="sk-mobile">
-            <div class="sk-panel-card">
-              <div class="skp-head">
-                <span class="skp-ico">📱</span>
-                <div>
-                  <div class="skp-title">Desenvolvimento Mobile</div>
-                  <div class="skp-sub">Apps nativos · cross-platform · publicação</div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React.js</span>
+                  <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Tailwind</span>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React Native</span>
-                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Expo</span>
-                <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React Native CLI</span>
+            </div>
+          </div>
+
+          <!-- ─ Mobile ─ -->
+          <div class="sk-panel" id="sk-mobile">
+            <div class="sk-panel-card" style="--pc:#00cfb0">
+              <div class="skp-head">
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg></div>
+                <div>
+                  <div class="skp-title">Desenvolvimento Mobile</div>
+                  <div class="skp-sub">Apps nativos · cross-platform · publicação nas stores</div>
+                </div>
+              </div>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">React Native</span><span class="skp-item-tag">Cross-Platform</span></div>
+                <div class="skp-item"><span class="skp-item-name">Expo</span><span class="skp-item-tag">SDK / Build</span></div>
+                <div class="skp-item"><span class="skp-item-name">React Native CLI</span><span class="skp-item-tag">Bare Workflow</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React Native</span>
+                  <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Expo</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Back-End -->
+          <!-- ─ Back-End ─ -->
           <div class="sk-panel" id="sk-backend">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#5b73f8">
               <div class="skp-head">
-                <span class="skp-ico">⚙️</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
                 <div>
                   <div class="skp-title">Back-End & APIs</div>
                   <div class="skp-sub">Servidor · REST · arquitetura MVC · integração</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>REST API</span>
-                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>Arquitetura MVC</span>
-                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>Node.js</span>
-                <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>Integrações de sistemas</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">REST API</span><span class="skp-item-tag">Protocolo</span></div>
+                <div class="skp-item"><span class="skp-item-name">Arquitetura MVC</span><span class="skp-item-tag">Padrão</span></div>
+                <div class="skp-item"><span class="skp-item-name">Node.js</span><span class="skp-item-tag">Runtime</span></div>
+                <div class="skp-item"><span class="skp-item-name">Integrações de sistemas</span><span class="skp-item-tag">Middleware</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>REST API</span>
+                  <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>Node.js</span>
+                  <span class="sk-chip" style="--c:#5b73f8"><span class="cd"></span>MVC</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Dados & BD -->
+          <!-- ─ Dados & BD ─ -->
           <div class="sk-panel" id="sk-dados">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#fbbf24">
               <div class="skp-head">
-                <span class="skp-ico">🗄️</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
                 <div>
                   <div class="skp-title">Dados & Banco de Dados</div>
                   <div class="skp-sub">SQL · NoSQL · modelagem · cloud storage</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>MySQL</span>
-                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>Firebase</span>
-                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>SQL</span>
-                <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>Modelagem de dados</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">MySQL</span><span class="skp-item-tag">SQL</span></div>
+                <div class="skp-item"><span class="skp-item-name">Firebase</span><span class="skp-item-tag">NoSQL / Cloud</span></div>
+                <div class="skp-item"><span class="skp-item-name">SQL</span><span class="skp-item-tag">Linguagem</span></div>
+                <div class="skp-item"><span class="skp-item-name">Modelagem de dados</span><span class="skp-item-tag">Estrutura</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>MySQL</span>
+                  <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>Firebase</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Design -->
+          <!-- ─ Design ─ -->
           <div class="sk-panel" id="sk-design">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#f9a8d4">
               <div class="skp-head">
-                <span class="skp-ico">🎨</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
                 <div>
                   <div class="skp-title">Design & UX / UI</div>
                   <div class="skp-sub">Produto visual · wireframes · prototipagem · identidade</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Figma</span>
-                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>UX / UI Design</span>
-                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Wireframe</span>
-                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Canva Pro</span>
-                <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Prototipagem</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">Figma</span><span class="skp-item-tag">UI Design</span></div>
+                <div class="skp-item"><span class="skp-item-name">UX Design</span><span class="skp-item-tag">Experiência</span></div>
+                <div class="skp-item"><span class="skp-item-name">Wireframe</span><span class="skp-item-tag">Estrutura</span></div>
+                <div class="skp-item"><span class="skp-item-name">Canva Pro</span><span class="skp-item-tag">Identidade</span></div>
+                <div class="skp-item"><span class="skp-item-name">Prototipagem</span><span class="skp-item-tag">Interação</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Figma</span>
+                  <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>UX/UI</span>
+                  <span class="sk-chip" style="--c:#f9a8d4"><span class="cd"></span>Prototipagem</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Embarcados -->
+          <!-- ─ Embarcados ─ -->
           <div class="sk-panel" id="sk-embed">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#6ee7b7">
               <div class="skp-head">
-                <span class="skp-ico">🔌</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M9 21H5a2 2 0 0 1-2-2v-4"/><path d="M15 3h4a2 2 0 0 1 2 2v4"/><path d="M15 21h4a2 2 0 0 0 2-2v-4"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg></div>
                 <div>
                   <div class="skp-title">Sistemas Embarcados & IoT</div>
                   <div class="skp-sub">Hardware · microcontroladores · automação · sensores</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>Arduino</span>
-                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>C / C++</span>
-                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>Circuitos elétricos</span>
-                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>IoT</span>
-                <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>Sensores</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">Arduino</span><span class="skp-item-tag">Microcontrolador</span></div>
+                <div class="skp-item"><span class="skp-item-name">C / C++</span><span class="skp-item-tag">Linguagem</span></div>
+                <div class="skp-item"><span class="skp-item-name">Circuitos elétricos</span><span class="skp-item-tag">Hardware</span></div>
+                <div class="skp-item"><span class="skp-item-name">IoT</span><span class="skp-item-tag">Conectividade</span></div>
+                <div class="skp-item"><span class="skp-item-name">Sensores</span><span class="skp-item-tag">Input / Output</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>Arduino</span>
+                  <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>C/C++</span>
+                  <span class="sk-chip" style="--c:#6ee7b7"><span class="cd"></span>IoT</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Arquitetura -->
+          <!-- ─ Arquitetura ─ -->
           <div class="sk-panel" id="sk-arch">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#93c5fd">
               <div class="skp-head">
-                <span class="skp-ico">🏗️</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
                 <div>
                   <div class="skp-title">Arquitetura & Análise de Sistemas</div>
                   <div class="skp-sub">Modelagem · documentação técnica · requisitos</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>UML</span>
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>BRModelo</span>
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Lucidchart</span>
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Análise de Requisitos</span>
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Arquitetura de Software</span>
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>DER</span>
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Fluxogramas</span>
-                <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Casos de Uso</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">UML</span><span class="skp-item-tag">Modelagem</span></div>
+                <div class="skp-item"><span class="skp-item-name">BRModelo</span><span class="skp-item-tag">Banco de Dados</span></div>
+                <div class="skp-item"><span class="skp-item-name">Lucidchart</span><span class="skp-item-tag">Diagramas</span></div>
+                <div class="skp-item"><span class="skp-item-name">Análise de Requisitos</span><span class="skp-item-tag">Levantamento</span></div>
+                <div class="skp-item"><span class="skp-item-name">Arquitetura de Software</span><span class="skp-item-tag">Design</span></div>
+                <div class="skp-item"><span class="skp-item-name">DER</span><span class="skp-item-tag">Entidade-Rel.</span></div>
+                <div class="skp-item"><span class="skp-item-name">Fluxogramas</span><span class="skp-item-tag">Processo</span></div>
+                <div class="skp-item"><span class="skp-item-name">Casos de Uso</span><span class="skp-item-tag">UML</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>UML</span>
+                  <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>Lucidchart</span>
+                  <span class="sk-chip" style="--c:#93c5fd"><span class="cd"></span>DER</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Ferramentas -->
+          <!-- ─ Ferramentas ─ -->
           <div class="sk-panel" id="sk-tools">
-            <div class="sk-panel-card">
+            <div class="sk-panel-card" style="--pc:#8a8ba6">
               <div class="skp-head">
-                <span class="skp-ico">🛠️</span>
+                <div class="skp-ico-wrap"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
                 <div>
                   <div class="skp-title">Ferramentas & Versionamento</div>
                   <div class="skp-sub">DevOps · controle de versão · produtividade · documentação</div>
                 </div>
               </div>
-              <div class="skp-chips">
-                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Git</span>
-                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>GitHub</span>
-                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Linux</span>
-                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Pacote Office</span>
-                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Controle de versão</span>
-                <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Documentação técnica</span>
+              <div class="skp-list">
+                <div class="skp-item"><span class="skp-item-name">Git</span><span class="skp-item-tag">Versionamento</span></div>
+                <div class="skp-item"><span class="skp-item-name">GitHub</span><span class="skp-item-tag">Repositório</span></div>
+                <div class="skp-item"><span class="skp-item-name">Linux</span><span class="skp-item-tag">Sistema</span></div>
+                <div class="skp-item"><span class="skp-item-name">Pacote Office</span><span class="skp-item-tag">Produtividade</span></div>
+                <div class="skp-item"><span class="skp-item-name">Controle de versão</span><span class="skp-item-tag">Prática</span></div>
+                <div class="skp-item"><span class="skp-item-name">Documentação técnica</span><span class="skp-item-tag">Escrita</span></div>
+              </div>
+              <div class="skp-chips-section">
+                <span class="skp-chips-label">Stack em destaque</span>
+                <div class="skp-chips">
+                  <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Git</span>
+                  <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>GitHub</span>
+                  <span class="sk-chip" style="--c:#8a8ba6"><span class="cd"></span>Linux</span>
+                </div>
               </div>
             </div>
           </div>
@@ -433,9 +541,6 @@
   </section>
 
   <hr class="divider">
-
-  <!-- ══════════════════════════════════════════
-       PROJECTS
   ══════════════════════════════════════════════ -->
   <section id="projects">
     <div class="si">
@@ -770,21 +875,6 @@
           <div><div class="cc-label">E-mail</div><div class="cc-value">mathquaresma@gmail.com</div></div>
           <span class="cc-arrow">→</span>
         </a>
-        <a class="contact-card" href="https://linkedin.com/in/matheus-quaresma" target="_blank" rel="noopener">
-          <div class="cc-icon cc-i-li"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
-          <div><div class="cc-label">LinkedIn</div><div class="cc-value">matheus-quaresma</div></div>
-          <span class="cc-arrow">→</span>
-        </a>
-        <a class="contact-card" href="https://wa.me/5511992917596" target="_blank" rel="noopener">
-          <div class="cc-icon cc-i-wh"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.533 5.851L.057 23.428l5.701-1.496A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.88 0-3.63-.519-5.127-1.416l-.361-.214-3.743.981.998-3.648-.235-.374A9.96 9.96 0 0 1 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg></div>
-          <div><div class="cc-label">WhatsApp</div><div class="cc-value">(11) 99291-7596</div></div>
-          <span class="cc-arrow">→</span>
-        </a>
-        <a class="contact-card" href="https://github.com/amquaresma" target="_blank" rel="noopener">
-          <div class="cc-icon cc-i-gh"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></div>
-          <div><div class="cc-label">GitHub</div><div class="cc-value">amquaresma</div></div>
-          <span class="cc-arrow">→</span>
-        </a>
       </div>
     </div>
   </section>
@@ -807,13 +897,17 @@
         </ul>
       </div>
       <div class="footer-right">
+        <a class="cv-btn cv-btn-footer" href="cv-matheus-quaresma.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Baixar Currículo
+        </a>
         <div class="footer-socials">
           <a class="f-soc" href="https://github.com/amquaresma" target="_blank" rel="noopener" aria-label="GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
           <a class="f-soc" href="https://linkedin.com/in/matheus-quaresma" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
           <a class="f-soc" href="mailto:mathquaresma@gmail.com" aria-label="E-mail"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></a>
           <a class="f-soc" href="https://instagram.com/mquaresmaa_" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
         </div>
-        <div class="footer-copy">© 2025 Matheus Rodrigues Quaresma<br>Todos os direitos reservados.</div>
+        <p class="footer-copy">© 2025 Matheus Quaresma · Todos os direitos reservados</p>
       </div>
     </div>
   </footer>
