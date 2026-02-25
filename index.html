@@ -131,22 +131,17 @@
 
     <!-- Photo card -->
     <div class="h-photo-col rx" style="transition-delay:.45s">
-      <input type="file" id="photo-input" accept="image/*">
-      <div class="photo-wrap" onclick="document.getElementById('photo-input').click()" title="Clique para adicionar foto">
-        <div class="photo-glow"></div>
-        <div class="photo-bg"></div>
-        <div class="photo-ph">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/></svg>
-          <p>Clique para<br>adicionar foto</p>
-        </div>
-        <img id="photo-preview" alt="Matheus Quaresma">
-      </div>
-      <div class="h-info">
-        <div class="hi-chip"><small>Graduação</small>Eng. Computação — SENAC</div>
-        <div class="hi-chip"><small>Técnico</small>Desenv. de Sistemas — ETEC</div>
-        <div class="hi-chip ac"><small>Inglês</small>C1 Avançado (EF SET)</div>
-      </div>
-    </div>
+  <div class="photo-wrap">
+    <div class="photo-glow"></div>
+    <div class="photo-bg"></div>
+    <img id="photo-preview" src="assets/foto pessoal.jpg" alt="Matheus Quaresma" style="display:block;">
+  </div>
+  <div class="h-info">
+    <div class="hi-chip"><small>Graduação</small>Eng. Computação — SENAC</div>
+    <div class="hi-chip"><small>Técnico</small>Desenv. de Sistemas — ETEC</div>
+    <div class="hi-chip ac"><small>Inglês</small>C1 Avançado (EF SET)</div>
+  </div>
+</div>
 
     <div class="scroll-hint r" style="transition-delay:.9s">
       <div class="mouse"><div class="mouse-dot"></div></div>
