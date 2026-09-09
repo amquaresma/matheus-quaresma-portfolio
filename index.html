@@ -42,7 +42,7 @@
       <li><a href="#contact">Contato</a></li>
     </ul>
     <div class="n-actions">
-      <a class="cv-btn" href="cv-matheus-quaresma.pdf" download aria-label="Baixar CV">
+      <a class="cv-btn" href="assets/CURRICULO - Matheus Rodrigues Quaresma - T.I - DEV (2).pdf" download aria-label="Baixar CV">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         <span>CV</span>
       </a>
@@ -139,7 +139,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/></svg>
           <p>Clique para<br>adicionar foto</p>
         </div>
-        <img id="photo-preview" alt="Matheus Quaresma">
+        <img id="photo-preview" src="assets/foto pessoal.jpg" alt="Matheus Quaresma" style="display:block;">
       </div>
       <div class="h-info">
         <div class="hi-chip"><small>Graduação</small>Eng. Computação — SENAC</div>
@@ -544,7 +544,7 @@
   </section>
 
   <hr class="divider">
-  ══════════════════════════════════════════════ -->
+  <!-- ══ PROJECTS ══════════════════════════════ -->
   <section id="projects">
     <div class="si">
       <div class="eyebrow fade">Portfólio</div>
@@ -553,172 +553,246 @@
 
       <div class="proj-tabs">
         <button class="ptab act" data-tab="apps">Apps Mobile</button>
-        <button class="ptab" data-tab="sites">Sites</button>
+        <button class="ptab" data-tab="sites">Sites & Web</button>
         <button class="ptab" data-tab="sistemas">Sistemas Desktop</button>
         <button class="ptab" data-tab="embarcados">Embarcados</button>
-        <button class="ptab" data-tab="arquitetura">Arquitetura</button>
         <button class="ptab" data-tab="prototipos">Protótipos</button>
+        <button class="ptab" data-tab="outros">Python / CLI</button>
       </div>
 
-      <!-- Apps Mobile -->
+      <!-- ── Apps Mobile ── -->
       <div class="proj-panel act" id="tab-apps">
 
         <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">React Native</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
-            <img alt="BlueWay"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
           <div class="proj-body">
-            <div class="proj-row">
-              <div class="proj-name">BlueWay</div>
-              <span class="pst st-done">Concluído</span>
-            </div>
-            <p class="proj-desc">Aplicativo mobile para acompanhamento escolar de alunos com TDAH e TEA. Funcionalidades pedagógicas, relatórios e integração entre alunos, responsáveis e instituições.</p>
+            <div class="proj-row"><div class="proj-name">Trampay</div><span class="pst st-wip">Em desenvolvimento</span></div>
+            <p class="proj-desc">App para microempreendedores e pequenos negócios com gerenciamento financeiro, clientes, estoque, serviços e simulação de impostos.</p>
             <div class="proj-stack">
-              <span class="stk fe">React Native</span>
-              <span class="stk fe">Expo</span>
-              <span class="stk lg">TypeScript</span>
-              <span class="stk db">Firebase</span>
-              <span class="stk">UX/UI</span>
+              <span class="stk fe">React Native</span><span class="stk fe">React.js</span>
+              <span class="stk lg">C#</span><span class="stk be">.NET API</span><span class="stk db">MySQL</span>
             </div>
             <div class="proj-links">
-              <a class="plink" href="https://github.com/amquaresma" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                Repositório
-              </a>
-              <a class="plink" href="#">Figma</a>
-              <a class="plink" href="#">Demo</a>
+              <a class="plink" href="https://github.com/amquaresma" target="_blank" rel="noopener">Repositório</a>
             </div>
           </div>
         </div>
 
         <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">React Native</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
-            <img alt="Maternus"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
           <div class="proj-body">
-            <div class="proj-row">
-              <div class="proj-name">Maternus</div>
-              <span class="pst st-done">Concluído</span>
-            </div>
-            <p class="proj-desc">App mobile para gestantes com foco em saúde mental. Agenda de atendimentos, diário emocional, comunidade e campanhas institucionais.</p>
+            <div class="proj-row"><div class="proj-name">Step Masters</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">App mobile para leitura, processamento e persistência de dados dos sensores do dispositivo, com contagem de passos e histórico de atividades.</p>
             <div class="proj-stack">
-              <span class="stk fe">React Native</span>
-              <span class="stk fe">Expo</span>
-              <span class="stk lg">TypeScript</span>
-              <span class="stk db">Firebase</span>
-              <span class="stk">Saúde Digital</span>
+              <span class="stk fe">React Native</span><span class="stk fe">Expo</span>
+              <span class="stk lg">JavaScript</span><span class="stk">AsyncStorage</span><span class="stk">Expo Sensors</span>
             </div>
             <div class="proj-links">
-              <a class="plink" href="https://github.com/amquaresma" target="_blank" rel="noopener">Repositório</a>
-              <a class="plink" href="#">Figma</a>
-              <a class="plink" href="#">Demo</a>
+              <a class="plink" href="https://github.com/amquaresma/App-Step-Masters" target="_blank" rel="noopener">Repositório</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Pokédex Expandida</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">App com busca de Pokémon, construção de times, comparação e experiência interativa de Pokédex consumindo a PokéAPI.</p>
+            <div class="proj-stack">
+              <span class="stk fe">React Native</span><span class="stk fe">Expo 54</span>
+              <span class="stk lg">JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/Pokedex-expandida-app" target="_blank" rel="noopener">Repositório</a>
             </div>
           </div>
         </div>
 
       </div><!-- /tab-apps -->
 
-      <!-- Sites -->
+      <!-- ── Sites & Web ── -->
       <div class="proj-panel" id="tab-sites">
+
         <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">Web</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
-            <img alt="Site"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
           <div class="proj-body">
-            <div class="proj-row"><div class="proj-name">Projeto Web</div><span class="pst st-wip">Em breve</span></div>
-            <p class="proj-desc">Espaço para seus projetos de sites. Adicione nome, descrição, stack e links.</p>
-            <div class="proj-stack"><span class="stk fe">React.js</span><span class="stk be">Node.js</span><span class="stk lg">TypeScript</span><span class="stk db">MySQL</span></div>
-            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Demo ao vivo</a></div>
+            <div class="proj-row"><div class="proj-name">Axion</div><span class="pst st-wip">Em desenvolvimento</span></div>
+            <p class="proj-desc">Plataforma web SaaS para gerenciamento financeiro e comercial de MEIs, freelancers e pequenos negócios.</p>
+            <div class="proj-stack">
+              <span class="stk fe">React.js</span><span class="stk fe">Vite.js</span>
+              <span class="stk lg">JavaScript</span><span class="stk db">Supabase</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/axion-plataforma-gerenciamento-financeiro-comercial-" target="_blank" rel="noopener">Repositório</a>
+              <a class="plink" href="https://axion-saas.vercel.app/" target="_blank" rel="noopener">Demo ao vivo</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Sistemas Desktop -->
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Casino Simulator Educational</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Plataforma educativa que demonstra, via probabilidades e simulações, por que a vantagem matemática sempre favorece a casa.</p>
+            <div class="proj-stack">
+              <span class="stk fe">React</span><span class="stk fe">Tailwind</span><span class="stk fe">shadcn/ui</span>
+              <span class="stk be">Node.js</span><span class="stk be">Express</span><span class="stk db">PostgreSQL</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/casino-simulator-educational" target="_blank" rel="noopener">Repositório</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">ISS Monitor</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Sistema web de monitoramento da Estação Espacial Internacional, com recuperação de dados de experimentos científicos em tempo real via API.</p>
+            <div class="proj-stack">
+              <span class="stk lg">HTML</span><span class="stk lg">CSS</span><span class="stk lg">JavaScript</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/Sistema-de-monitoramento-ISS-" target="_blank" rel="noopener">Repositório</a>
+              <a class="plink" href="https://sistema-de-monitoramento-iss.vercel.app/" target="_blank" rel="noopener">Demo ao vivo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Dragon Ball Character Explorer</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Frontend que consome a API pública de Dragon Ball para explorar e apresentar informações dos personagens de forma interativa.</p>
+            <div class="proj-stack">
+              <span class="stk lg">HTML</span><span class="stk lg">CSS</span><span class="stk lg">JavaScript</span><span class="stk">API</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/site-dragon-ball-consumindo-api" target="_blank" rel="noopener">Repositório</a>
+              <a class="plink" href="https://site-dragon-ball-consumindo-api.vercel.app/" target="_blank" rel="noopener">Demo ao vivo</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tab-sites -->
+
+      <!-- ── Sistemas Desktop ── -->
       <div class="proj-panel" id="tab-sistemas">
+
         <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">Desktop · C#</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
-            <img alt="Trampay"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
           <div class="proj-body">
-            <div class="proj-row"><div class="proj-name">Trampay</div><span class="pst st-done">TCC</span></div>
-            <p class="proj-desc">Sistema de controle de caixa e agenda para microempresas e autônomos. Organização financeira completa, desenvolvido como TCC técnico.</p>
-            <div class="proj-stack"><span class="stk lg">C#</span><span class="stk be">MVC</span><span class="stk db">MySQL</span><span class="stk be">REST API</span></div>
-            <div class="proj-links"><a class="plink" href="https://github.com/amquaresma" target="_blank" rel="noopener">Repositório</a><a class="plink" href="#">Figma</a></div>
+            <div class="proj-row"><div class="proj-name">SUBINO</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Sistema desktop para gerenciamento de tráfego de ônibus com interface Windows Forms e banco de dados MySQL.</p>
+            <div class="proj-stack">
+              <span class="stk lg">C#</span><span class="stk be">.NET 4.8</span>
+              <span class="stk">Windows Forms</span><span class="stk db">MySQL</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/SUBINO-Sistema-C--para-gerenciamento-de-trafego-de-onibus" target="_blank" rel="noopener">Repositório</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Embarcados -->
+      </div><!-- /tab-sistemas -->
+
+      <!-- ── Embarcados ── -->
       <div class="proj-panel" id="tab-embarcados">
-        <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">Arduino · IoT</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar foto / esquemático</span></div>
-            <img alt="Embarcado"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
-          <div class="proj-body">
-            <div class="proj-row"><div class="proj-name">Circuito IoT</div><span class="pst st-wip">Em breve</span></div>
-            <p class="proj-desc">Projetos de sistemas embarcados — circuitos, microcontroladores, automação e IoT. Adicione nome, esquemático e documentação técnica.</p>
-            <div class="proj-stack"><span class="stk em">Arduino</span><span class="stk em">C/C++</span><span class="stk">Sensores</span><span class="stk">IoT</span></div>
-            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Esquemático</a><a class="plink" href="#">Documentação</a></div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Arquitetura -->
-      <div class="proj-panel" id="tab-arquitetura">
         <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">UML · Modelagem</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar diagrama</span></div>
-            <img alt="UML"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
           <div class="proj-body">
-            <div class="proj-row"><div class="proj-name">Diagramas UML</div><span class="pst st-proto">Modelagem</span></div>
-            <p class="proj-desc">Diagramas de arquitetura, classes, sequência e casos de uso com Lucidchart e Astah. Documentação técnica completa de sistemas.</p>
-            <div class="proj-stack"><span class="stk ar">UML</span><span class="stk ar">Lucidchart</span><span class="stk ar">BRModelo</span><span class="stk">DER</span></div>
-            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Lucidchart</a><a class="plink" href="#">Documentação</a></div>
+            <div class="proj-row"><div class="proj-name">Sensor de Caixa d'Água</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Sistema embarcado com sensor ultrassônico para monitoramento contínuo do nível de caixa d'água, com alerta por limite.</p>
+            <div class="proj-stack">
+              <span class="stk em">Arduino</span><span class="stk em">C++</span><span class="stk">Sensor Ultrassônico</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/sensor-caixa-d-gua-ARDUINO" target="_blank" rel="noopener">Repositório</a>
+            </div>
           </div>
         </div>
-        <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">Análise · Requisitos</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar diagrama</span></div>
-            <img alt="Requisitos"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
-          <div class="proj-body">
-            <div class="proj-row"><div class="proj-name">Requisitos</div><span class="pst st-done">Concluído</span></div>
-            <p class="proj-desc">Levantamento de requisitos funcionais e não-funcionais, fluxogramas de processos e modelagem com BRModelo.</p>
-            <div class="proj-stack"><span class="stk ar">Requisitos</span><span class="stk ar">Fluxogramas</span><span class="stk ar">BRModelo</span></div>
-            <div class="proj-links"><a class="plink" href="#">Repositório</a><a class="plink" href="#">Ver PDF</a></div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Protótipos -->
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Alarme com Senha</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Sistema embarcado com controle de acesso por senha via teclado matricial e acionamento de alarme sonoro em caso de tentativa inválida.</p>
+            <div class="proj-stack">
+              <span class="stk em">Arduino</span><span class="stk em">C++</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/Sistema-de-Alarme-com-senha-ARDUINO" target="_blank" rel="noopener">Repositório</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Alarme com Sensor de Movimento</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Sistema embarcado para detecção de presença e movimento com acionamento automático de alarme por sensor PIR.</p>
+            <div class="proj-stack">
+              <span class="stk em">Arduino</span><span class="stk em">C++</span><span class="stk">Sensor de Movimento</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/Sistema-de-Alarme-Presen-a-e-movimento-ARDUINO" target="_blank" rel="noopener">Repositório</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tab-embarcados -->
+
+      <!-- ── Protótipos ── -->
       <div class="proj-panel" id="tab-prototipos">
+
         <div class="proj-card">
-          <div class="proj-img" onclick="imgUp(this)">
-            <div class="pibadge">Figma · UI</div>
-            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
-            <img alt="Protótipo"><input type="file" class="proj-img-input" accept="image/*">
-          </div>
           <div class="proj-body">
-            <div class="proj-row"><div class="proj-name">Protótipo UI</div><span class="pst st-proto">Figma</span></div>
-            <p class="proj-desc">Protótipos e wireframes de alta fidelidade. Mockups, fluxos de UX e designs conceituais desenvolvidos no Figma.</p>
-            <div class="proj-stack"><span class="stk">Figma</span><span class="stk">UX/UI</span><span class="stk">Wireframe</span><span class="stk">Prototipagem</span></div>
-            <div class="proj-links"><a class="plink" href="#">Abrir no Figma</a></div>
+            <div class="proj-row"><div class="proj-name">Maternus</div><span class="pst st-proto">Figma</span></div>
+            <p class="proj-desc">Prototipação de solução digital para saúde mental de gestantes. Foco em fluxos de navegação, experiência do usuário e interface de alta fidelidade.</p>
+            <div class="proj-stack">
+              <span class="stk">Figma</span><span class="stk">UX/UI</span><span class="stk">Prototipagem</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://www.figma.com/design/m7cxjml4q6FF2Quf9Q9f1N/Maternus--Copy-?t=Y424esqaRWjfP46I-" target="_blank" rel="noopener">Abrir no Figma</a>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">BlueWay</div><span class="pst st-proto">Figma</span></div>
+            <p class="proj-desc">Wireframe e prototipação de app para acompanhamento escolar de alunos com TDAH e TEA. Foco em estrutura de telas, fluxos e UX.</p>
+            <div class="proj-stack">
+              <span class="stk">Figma</span><span class="stk">Wireframe</span><span class="stk">UX/UI</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://www.figma.com/design/azVxqN8yrQxFeEuGJSrPrT/Projeto-Interdisciplinar---Wireframe--Copy-?m=auto&t=NwDlb5nHyzRp9lU0-1" target="_blank" rel="noopener">Abrir no Figma</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tab-prototipos -->
+
+      <!-- ── Python / CLI ── -->
+      <div class="proj-panel" id="tab-outros">
+
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">Quantum Teleport Lab</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Implementação do protocolo de teleporte quântico com Qiskit e PennyLane, comparando comportamento em diferentes condições de ruído.</p>
+            <div class="proj-stack">
+              <span class="stk lg">Python</span><span class="stk">Qiskit</span><span class="stk">PennyLane</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/quantum-teleport" target="_blank" rel="noopener">Repositório</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-body">
+            <div class="proj-row"><div class="proj-name">House Always Wins — CLI</div><span class="pst st-done">Concluído</span></div>
+            <p class="proj-desc">Simulador educacional via terminal que demonstra probabilidade e a vantagem matemática da casa em jogos de cassino.</p>
+            <div class="proj-stack">
+              <span class="stk lg">Python</span><span class="stk">CLI</span>
+            </div>
+            <div class="proj-links">
+              <a class="plink" href="https://github.com/amquaresma/house-always-wins-cli-" target="_blank" rel="noopener">Repositório</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tab-outros -->
 
     </div>
   </section>
@@ -945,7 +1019,7 @@
         </ul>
       </div>
       <div class="footer-right">
-        <a class="cv-btn cv-btn-footer" href="cv-matheus-quaresma.pdf" download>
+        <a class="cv-btn cv-btn-footer" href="assets/CURRICULO - Matheus Rodrigues Quaresma - T.I - DEV (2).pdf" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Baixar Currículo
         </a>
