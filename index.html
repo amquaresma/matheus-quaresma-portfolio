@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matheus Quaresma — Full Stack Developer</title>
-  <link rel="icon" type="image/png" href="assets/icon.png">
 
   <!-- Fonts: Orbitron (tech display) · DM Sans (body) · JetBrains Mono (code/labels) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +42,7 @@
       <li><a href="#contact">Contato</a></li>
     </ul>
     <div class="n-actions">
-      <a class="cv-btn" href="assets/CURRICULO - Matheus Rodrigues Quaresma - T.I - DEV (2).pdf" download aria-label="Baixar CV">
+      <a class="cv-btn" href="cv-matheus-quaresma.pdf" download aria-label="Baixar CV">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         <span>CV</span>
       </a>
@@ -118,7 +117,7 @@
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           <span>LinkedIn</span>
         </a>
-        <a class="social-btn" href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+        <a class="social-btn" href="mailto:mathquaresma@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
           <span>E-mail</span>
         </a>
@@ -132,17 +131,22 @@
 
     <!-- Photo card -->
     <div class="h-photo-col rx" style="transition-delay:.45s">
-  <div class="photo-wrap">
-    <div class="photo-glow"></div>
-    <div class="photo-bg"></div>
-    <img id="photo-preview" src="assets/foto pessoal.jpg" alt="Matheus Quaresma" style="display:block;">
-  </div>
-  <div class="h-info">
-    <div class="hi-chip"><small>Graduação</small>Eng. Computação — SENAC</div>
-    <div class="hi-chip"><small>Técnico</small>Desenv. de Sistemas — ETEC</div>
-    <div class="hi-chip ac"><small>Inglês</small>C1 Avançado (EF SET)</div>
-  </div>
-</div>
+      <input type="file" id="photo-input" accept="image/*">
+      <div class="photo-wrap" onclick="document.getElementById('photo-input').click()" title="Clique para adicionar foto">
+        <div class="photo-glow"></div>
+        <div class="photo-bg"></div>
+        <div class="photo-ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/></svg>
+          <p>Clique para<br>adicionar foto</p>
+        </div>
+        <img id="photo-preview" alt="Matheus Quaresma">
+      </div>
+      <div class="h-info">
+        <div class="hi-chip"><small>Graduação</small>Eng. Computação — SENAC</div>
+        <div class="hi-chip"><small>Técnico</small>Desenv. de Sistemas — ETEC</div>
+        <div class="hi-chip ac"><small>Inglês</small>C1 Avançado (EF SET)</div>
+      </div>
+    </div>
 
     <div class="scroll-hint r" style="transition-delay:.9s">
       <div class="mouse"><div class="mouse-dot"></div></div>
@@ -187,7 +191,7 @@
             <span class="cat-info">
               <span class="cat-lbl">UI / Interfaces</span>
               <span class="cat-name">Front-End</span>
-              <span class="cat-count">4 tecnologias</span>
+              <span class="cat-count">6 tecnologias</span>
             </span>
             <span class="cat-arrow">›</span>
           </button>
@@ -323,6 +327,8 @@
               </div>
               <div class="skp-list">
                 <div class="skp-item"><span class="skp-item-name">React.js</span><span class="skp-item-tag">Framework</span></div>
+                <div class="skp-item"><span class="skp-item-name">Next.js</span><span class="skp-item-tag">Full Stack / SSR</span></div>
+                <div class="skp-item"><span class="skp-item-name">Vite.js</span><span class="skp-item-tag">Build Tool</span></div>
                 <div class="skp-item"><span class="skp-item-name">Tailwind CSS</span><span class="skp-item-tag">Estilização</span></div>
                 <div class="skp-item"><span class="skp-item-name">Bootstrap</span><span class="skp-item-tag">UI Kit</span></div>
                 <div class="skp-item"><span class="skp-item-name">Responsive Design</span><span class="skp-item-tag">Layout</span></div>
@@ -331,6 +337,7 @@
                 <span class="skp-chips-label">Stack em destaque</span>
                 <div class="skp-chips">
                   <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>React.js</span>
+                  <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Next.js</span>
                   <span class="sk-chip" style="--c:#00cfb0"><span class="cd"></span>Tailwind</span>
                 </div>
               </div>
@@ -401,15 +408,15 @@
               </div>
               <div class="skp-list">
                 <div class="skp-item"><span class="skp-item-name">MySQL</span><span class="skp-item-tag">SQL</span></div>
-                <div class="skp-item"><span class="skp-item-name">Firebase</span><span class="skp-item-tag">NoSQL / Cloud</span></div>
-                <div class="skp-item"><span class="skp-item-name">SQL</span><span class="skp-item-tag">Linguagem</span></div>
+                <div class="skp-item"><span class="skp-item-name">Supabase</span><span class="skp-item-tag">BaaS / PostgreSQL</span></div>
+                <div class="skp-item"><span class="skp-item-name">PostgreSQL</span><span class="skp-item-tag">SQL</span></div>
                 <div class="skp-item"><span class="skp-item-name">Modelagem de dados</span><span class="skp-item-tag">Estrutura</span></div>
               </div>
               <div class="skp-chips-section">
                 <span class="skp-chips-label">Stack em destaque</span>
                 <div class="skp-chips">
                   <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>MySQL</span>
-                  <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>Firebase</span>
+                  <span class="sk-chip" style="--c:#fbbf24"><span class="cd"></span>Supabase</span>
                 </div>
               </div>
             </div>
@@ -557,9 +564,10 @@
       <div class="proj-panel act" id="tab-apps">
 
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">React Native</div>
-            <img src="assets/blueway.png" alt="BlueWay">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="BlueWay"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row">
@@ -586,9 +594,10 @@
         </div>
 
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">React Native</div>
-            <img src="assets/maternus.png" alt="Maternus">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Maternus"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row">
@@ -616,9 +625,10 @@
       <!-- Sites -->
       <div class="proj-panel" id="tab-sites">
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">Web</div>
-            <img src="assets/projeto-web.png" alt="Projeto Web">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Site"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row"><div class="proj-name">Projeto Web</div><span class="pst st-wip">Em breve</span></div>
@@ -632,9 +642,10 @@
       <!-- Sistemas Desktop -->
       <div class="proj-panel" id="tab-sistemas">
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">Desktop · C#</div>
-            <img src="assets/trampay.png" alt="Trampay">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Trampay"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row"><div class="proj-name">Trampay</div><span class="pst st-done">TCC</span></div>
@@ -648,9 +659,10 @@
       <!-- Embarcados -->
       <div class="proj-panel" id="tab-embarcados">
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">Arduino · IoT</div>
-            <img src="assets/embarcado.png" alt="Circuito IoT">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar foto / esquemático</span></div>
+            <img alt="Embarcado"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row"><div class="proj-name">Circuito IoT</div><span class="pst st-wip">Em breve</span></div>
@@ -664,9 +676,10 @@
       <!-- Arquitetura -->
       <div class="proj-panel" id="tab-arquitetura">
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">UML · Modelagem</div>
-            <img src="assets/uml.png" alt="Diagramas UML">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar diagrama</span></div>
+            <img alt="UML"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row"><div class="proj-name">Diagramas UML</div><span class="pst st-proto">Modelagem</span></div>
@@ -676,9 +689,10 @@
           </div>
         </div>
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">Análise · Requisitos</div>
-            <img src="assets/requisitos.png" alt="Requisitos">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar diagrama</span></div>
+            <img alt="Requisitos"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row"><div class="proj-name">Requisitos</div><span class="pst st-done">Concluído</span></div>
@@ -692,9 +706,10 @@
       <!-- Protótipos -->
       <div class="proj-panel" id="tab-prototipos">
         <div class="proj-card">
-          <div class="proj-img">
+          <div class="proj-img" onclick="imgUp(this)">
             <div class="pibadge">Figma · UI</div>
-            <img src="assets/prototipo.png" alt="Protótipo UI">
+            <div class="proj-img-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span>Adicionar screenshot</span></div>
+            <img alt="Protótipo"><input type="file" class="proj-img-input" accept="image/*">
           </div>
           <div class="proj-body">
             <div class="proj-row"><div class="proj-name">Protótipo UI</div><span class="pst st-proto">Figma</span></div>
@@ -743,7 +758,7 @@
         <!-- Left: bio + langs -->
         <div class="fade">
           <p class="about-text">Sou o <strong>Matheus Quaresma</strong>, desenvolvedor Full Stack da Zona Sul de São Paulo. Minha trajetória começou com curiosidade genuína sobre como as coisas funcionam — e evoluiu para uma carreira dedicada a construir software que resolve problemas reais com elegância.</p>
-          <p class="about-text">Atualmente curso <strong>Engenharia de Computação no SENAC</strong> e <strong>Ciência de Dados na FATEC</strong>. Acredito que a melhor solução está na interseção entre <strong>bom código, bom design e boa estratégia</strong>.</p>
+          <p class="about-text">Atualmente curso <strong>Engenharia de Computação no SENAC</strong>, <strong>Ciência de Dados na FATEC</strong> e <strong>Bacharelado em Ciência de Dados na Univesp</strong>. Acredito que a melhor solução está na interseção entre <strong>bom código, bom design e boa estratégia</strong>.</p>
           <p class="about-text">Fora do teclado, sou medalhista nacional em olimpíadas de Ciências e Geopolítica — o que diz muito sobre como encaro desafios: com método, estudo e foco em resultados.</p>
           <div class="lang-pills">
             <span class="lang-pill pt"><span class="lang-flag">🇧🇷</span> Português <span class="lang-level-badge">Nativo</span></span>
@@ -759,13 +774,13 @@
           <div class="acc-group open" data-acc>
             <button class="acc-header">
               <div class="acc-left">
-                <span class="acc-icon">🎓</span>
+                <span class="acc-icon"></span>
                 <div>
                   <div class="acc-cat">Ensino Superior</div>
                   <div class="acc-title">Graduações</div>
                 </div>
               </div>
-              <span class="acc-count">2</span>
+              <span class="acc-count">3</span>
               <div class="acc-chevron"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg></div>
             </button>
             <div class="acc-body">
@@ -780,6 +795,11 @@
                   <div class="acc-item-sub">FATEC Santana do Parnaíba</div>
                   <div class="acc-item-period">2026 — 2028 (previsão)</div>
                 </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Bacharelado em Ciência de Dados</div>
+                  <div class="acc-item-sub">Univesp</div>
+                  <div class="acc-item-period">2026 — 2030 (previsão)</div>
+                </div>
               </div>
             </div>
           </div>
@@ -788,7 +808,7 @@
           <div class="acc-group" data-acc>
             <button class="acc-header">
               <div class="acc-left">
-                <span class="acc-icon">🏫</span>
+                <span class="acc-icon"></span>
                 <div>
                   <div class="acc-cat">Ensino Técnico</div>
                   <div class="acc-title">Formação Técnica</div>
@@ -812,13 +832,13 @@
           <div class="acc-group" data-acc>
             <button class="acc-header">
               <div class="acc-left">
-                <span class="acc-icon">📚</span>
+                <span class="acc-icon"></span>
                 <div>
                   <div class="acc-cat">Certificações & Cursos</div>
                   <div class="acc-title">Extracurricular</div>
                 </div>
               </div>
-              <span class="acc-count">2</span>
+              <span class="acc-count">10</span>
               <div class="acc-chevron"><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg></div>
             </button>
             <div class="acc-body">
@@ -827,6 +847,46 @@
                   <div class="acc-item-title">Inglês C1 Avançado — EF SET / CEFR</div>
                   <div class="acc-item-sub">IW – Inglês sem Enrolação · Itapecerica da Serra</div>
                   <div class="acc-item-period">2024 — 2025 · 2 anos</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Introdução à Computação Quântica</div>
+                  <div class="acc-item-sub">SENAC São Paulo — TIC em Trilhas</div>
+                  <div class="acc-item-period">Mai 2026</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Dominando Algoritmos com Python</div>
+                  <div class="acc-item-sub">TIC em Trilhas — Modelo Iterativo e Sequencial</div>
+                  <div class="acc-item-period">Jun 2026</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Dominando Algoritmos com C</div>
+                  <div class="acc-item-sub">TIC em Trilhas — 72 horas · Lógica e linguagem C</div>
+                  <div class="acc-item-period">Jun 2026</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Fundamentos de UX</div>
+                  <div class="acc-item-sub">TIC em Trilhas</div>
+                  <div class="acc-item-period">Mai 2026</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Projetos de Sistemas de TI</div>
+                  <div class="acc-item-sub">Fundação Bradesco</div>
+                  <div class="acc-item-period">Jan 2026</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Desenvolvimento Orientado a Objetos com Python</div>
+                  <div class="acc-item-sub">Fundação Bradesco</div>
+                  <div class="acc-item-period">Mar 2026</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Desenvolvendo um Projeto Completo Python com Estruturas de Dados</div>
+                  <div class="acc-item-sub">Fundação Bradesco</div>
+                  <div class="acc-item-period">Mar 2026</div>
+                </div>
+                <div class="acc-item">
+                  <div class="acc-item-title">Criando um Projeto com Interface Gráfica com Python</div>
+                  <div class="acc-item-sub">Fundação Bradesco</div>
+                  <div class="acc-item-period">Mar 2026</div>
                 </div>
                 <div class="acc-item">
                   <div class="acc-item-title">16ª Escola de Inovadores</div>
@@ -858,7 +918,7 @@
         </p>
       </div>
       <div class="contact-right fade">
-        <a class="contact-card" href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+        <a class="contact-card" href="mailto:mathquaresma@gmail.com">
           <div class="cc-icon cc-i-em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></div>
           <div><div class="cc-label">E-mail</div><div class="cc-value">mathquaresma@gmail.com</div></div>
           <span class="cc-arrow">→</span>
@@ -885,17 +945,17 @@
         </ul>
       </div>
       <div class="footer-right">
-        <a class="cv-btn cv-btn-footer" href="assets/CURRICULO - Matheus Rodrigues Quaresma - T.I - DEV (2).pdf" download>
+        <a class="cv-btn cv-btn-footer" href="cv-matheus-quaresma.pdf" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Baixar Currículo
         </a>
         <div class="footer-socials">
           <a class="f-soc" href="https://github.com/amquaresma" target="_blank" rel="noopener" aria-label="GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
           <a class="f-soc" href="https://linkedin.com/in/matheus-quaresma" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a class="f-soc" href="https://mail.google.com/mail/u/0/#inbox?compose=new" aria-label="E-mail"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></a>
+          <a class="f-soc" href="mailto:mathquaresma@gmail.com" aria-label="E-mail"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></a>
           <a class="f-soc" href="https://instagram.com/mquaresmaa_" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
         </div>
-        <p class="footer-copy">© 2026 Matheus Quaresma · Todos os direitos reservados</p>
+        <p class="footer-copy">© 2025 Matheus Quaresma · Todos os direitos reservados</p>
       </div>
     </div>
   </footer>
